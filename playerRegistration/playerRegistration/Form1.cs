@@ -7,22 +7,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace playerRegistration
 {
-    public partial class Form1 : Form
+    public partial class frmCustomer : Form
     {
-        public Form1()
+        SqlDataAdapter daCustomer;
+        DataSet dsInTheDogHouse = new DataSet();
+        SqlCommandBuilder cmdBCustomer;
+        DataRow drCustomer;
+        String connStr, sqlCustomer;
+        int selectedTab = 0;
+        bool custSelected = false;
+        int custNoSelected = 0;
+
+
+
+        public frmCustomer()
         {
             InitializeComponent();
         }
 
-        private void Edit_Click(object sender, EventArgs e)
+        private void frmCustomer_Load(object sender, EventArgs e)
         {
+            connStr = @"Data Source = .; Initial Catalog = InTheDoghouse; Integrated Security = true";
 
+            sqlCustomer = @"select * from Customer";
+            daCustomer = new SqlDataAdapter(sqlCustomer, connStr);
+            cmdBCustomer = new SqlCommandBuilder(daCustomer);
+            daCustomer.FillSchema(dsInTheDogHouse, SchemaType.Source, "Customer");
+            daCustomer.Fill(dsInTheDogHouse, "Customer");
+
+            dgvCustomers.DataSource = dsInTheDogHouse.Tables["Customer"];
+
+            dgvCustomers.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+
+            tabCustomer.SelectedIndex = 1;
+            tabCustomer.SelectedIndex = 0;
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void btnAddAdd_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Edit_Click(object sender, EventArgs e)
         {
 
         }
@@ -32,19 +62,13 @@ namespace playerRegistration
 
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void txtKitNumber_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
