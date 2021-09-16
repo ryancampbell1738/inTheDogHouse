@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyCustomer.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="MyValidation.cs" />
-    <Compile Include="MyExcption.cs" />
+    <Compile Include="MyException.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

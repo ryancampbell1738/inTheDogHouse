@@ -49,7 +49,8 @@ namespace playerRegistration
 
         private void btnAddAdd_Click(object sender, EventArgs e)
         {
-           MyCustomer
+            MyCustomer myCustomer = new MyCustomer();
+            bool ok = true;
         }
 
         private void Edit_Click(object sender, EventArgs e)

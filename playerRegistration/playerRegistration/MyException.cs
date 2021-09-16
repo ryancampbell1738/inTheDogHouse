@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace playerRegistration
 {
-    class MyExcption : Exception
+    class MyException : Exception
     {
         private String message;
 
-        public MyExcption(String message)
+        public MyException(String message)
         {
             this.message = message;
         }

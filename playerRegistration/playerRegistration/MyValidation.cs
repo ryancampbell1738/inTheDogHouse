@@ -53,7 +53,7 @@ namespace playerRegistration
             return ok;
         }
 
-        public static bool validLetterWhiteSpace(String txt)        // Allows Alphabetic Characters and Whitespace
+        public static bool validLetterWhitespace(String txt)        // Allows Alphabetic Characters and Whitespace
         {
             bool ok = true;
 
@@ -149,7 +149,7 @@ namespace playerRegistration
             return ok;
         }
 
-        public static String firstLetterEachWordUpper(String word)
+        public static String firstLetterEachWordToUpper(String word)
         {
             Char[] array = word.ToCharArray();
 
