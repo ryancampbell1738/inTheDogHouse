@@ -49,7 +49,7 @@ namespace playerRegistration
 
         private void btnAddAdd_Click(object sender, EventArgs e)
         {
-           
+           MyCustomer
         }
 
         private void Edit_Click(object sender, EventArgs e)

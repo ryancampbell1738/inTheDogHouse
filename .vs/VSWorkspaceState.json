@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\playerRegistration",
+    "\\playerRegistration\\playerRegistration"
   ],
-  "SelectedNode": "\\playerRegistration.sln (playerReg\\playerRegistration\\playerRegistration.sln)",
+  "SelectedNode": "\\playerRegistration\\playerRegistration\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
