@@ -15,3 +15,13 @@ C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\o
 C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
 C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
 C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe.config
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.pdb
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
