@@ -25,3 +25,4 @@ C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistrati
 C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
 C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
 C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
+C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmDog.resources
