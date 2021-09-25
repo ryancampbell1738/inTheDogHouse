@@ -23,7 +23,6 @@ namespace playerRegistration
         bool dogSelected = false;
         int dogNoSelected = 0;
 
-
         private void frmDog_Load(object sender, EventArgs e)
         {
             connStr = @"Data Source = .; Initial Catalog = InTheDogHouse; Integrated Security = true";
@@ -83,6 +82,8 @@ namespace playerRegistration
 
         }
 
+      
+
         public frmDog()
         {
             InitializeComponent();
@@ -136,99 +137,53 @@ namespace playerRegistration
                             getNumber(noRows);
                         }
 
+                        errP.Clear();
+                        clearAddForm();
                         break;
+                    }
+
+                case 2:
+                    {
+                        if (dogNoSelected == 0)
+                        {
+                            tabDog.SelectedIndex = 0;
+                            break;
+                        }
+                        else
+                        {
+                            lblAddDogNumber.Text = dogNoSelected.ToString();
+
+                            drDog = dsInTheDogHouse.Tables["Dog"].Rows.Find(lblAddDogNumber.Text);
+
+                            if (drDog["Gender"].ToString() == "M")
+                                cmbEditGender.SelectedIndex = 0;
+                            if (drDog["Gender"].ToString() == "F")
+                                cmbEditGender.SelectedIndex = 1;
+
+                            txtEditName.Text = drDog["Name"].ToString();
+                            txtEditColour.Text = drDog["Colour"].ToString();
+
+                            cmbEditBreedNo.SelectedIndex = cmbEditBreedNo.FindStringExact(drDog["BreedNo"].ToString());
+                            cmbEditBreedNo.Text = drDog["BreedNo"].ToString();
+                            dtpAddDOB.Value = Convert.ToDateTime(drDog["DOB"].ToString());
+                            cmbEditCustNo.SelectedIndex = cmbEditCustNo.FindStringExact(drDog["CustomerNo"].ToString());
+
+                            break;
+                        }
                     }
             }
         }
 
-
-
-
-
-
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnDisplayEdit_Click_1(object sender, EventArgs e)
         {
-
+            tabDog.SelectedIndex = 2;
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnCancelAdd_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Cancel the addition of Dog No: " + lblAddDogNumber.Text + "?", "Add Dog", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                tabDog.SelectedIndex = 0;
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabAdd_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
