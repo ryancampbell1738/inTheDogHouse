@@ -49,8 +49,148 @@ namespace playerRegistration
 
         private void btnAddAdd_Click(object sender, EventArgs e)
         {
+            MyCustomer myCustomer = new MyCustomer();
+            bool ok = true;
+            errP.Clear();
 
+            try
+            {
+                myCustomer.IDNo = Convert.ToInt32(lblAddCustNo.Text.Trim());
+            }
+            catch(MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(lblAddCustNo, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Title = cmbAddTitle.Text.Trim();
+            }
+            catch(MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(cmbAddTitle, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Surname = txtAddSurname.Text.Trim();
+            }
+            catch(MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddSurname, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Forename = txtAddForename.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddForename, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Street = txtAddStreet.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddStreet, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Town = txtAddTown.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddTown, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.County = txtAddCounty.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddCounty, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.County = txtAddCounty.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddCounty, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.Postcode = txtAddPostcode.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddPostcode, MyEx.toString());
+            }
+
+            try
+            {
+                myCustomer.TelNo = txtAddTelNo.Text.Trim();
+            }
+            catch (MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(txtAddTelNo, MyEx.toString());
+            }
+
+            try
+            {
+                if(ok)
+                {
+                    drCustomer = dsInTheDogHouse.Tables["Customer"].NewRow();
+
+                    drCustomer["CustomerNo"] = myCustomer.IDNo;
+                    drCustomer["Title"] = myCustomer.Title;
+                    drCustomer["Forename"] = myCustomer.Forename;
+                    drCustomer["Surname"] = myCustomer.Surname;
+                    drCustomer["Street"] = myCustomer.Street;
+                    drCustomer["Town"] = myCustomer.Town;
+                    drCustomer["County"] = myCustomer.County;
+                    drCustomer["Postcode"] = myCustomer.Postcode;
+                    drCustomer["TelNo"] = myCustomer.TelNo;
+
+                    dsInTheDogHouse.Tables["Customer"].Rows.Add(drCustomer);
+                    daCustomer.Update(dsInTheDogHouse, "Customer");
+
+                    MessageBox.Show("Customer Added");
+
+                    if (MessageBox.Show("Do you wish to add another customer?", "Add Customer", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        clearAddForm();
+                        getNumber(dsInTheDogHouse.Tables["Customer"].Rows.Count);
+                    }
+                    else
+                        tabCustomer.SelectedIndex = 0;
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("" + ex.TargetSite + "" + ex.Message, "Error!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+            }
         }
+
+        
         void clearAddForm()
         {
             cmbAddTitle.SelectedIndex = -1;
@@ -377,11 +517,6 @@ namespace playerRegistration
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
