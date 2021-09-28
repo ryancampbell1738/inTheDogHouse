@@ -1,42 +1,53 @@
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe.config
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.pdb
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
-C:\Users\30004700\Source\Repos\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
-C:\Users\Ryan\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe.config
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.pdb
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe.config
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.pdb
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.AssemblyReference.cache
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmCustomer.resources
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.Properties.Resources.resources
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.GenerateResource.cache
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.CoreCompileInputs.cache
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.exe
+C:/Users/30004700/Source/Repos/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.pdb
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.AssemblyReference.cache
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmCustomer.resources
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.Properties.Resources.resources
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.GenerateResource.cache
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.CoreCompileInputs.cache
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.exe
+C:/Users/Ryan/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.pdb
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe.config
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.pdb
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.AssemblyReference.cache
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmCustomer.resources
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.Properties.Resources.resources
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.GenerateResource.cache
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.CoreCompileInputs.cache
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.exe
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.pdb
 <<<<<<< HEAD
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe.config
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\bin\Debug\playerRegistration.pdb
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmDog.resources
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
-D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe.config
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/bin/Debug/playerRegistration.pdb
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.AssemblyReference.cache
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmCustomer.resources
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmDog.resources
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.Properties.Resources.resources
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.GenerateResource.cache
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.CoreCompileInputs.cache
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.exe
+D:/Stathub Repository/playerReg/playerRegistration/playerRegistration/obj/Debug/playerRegistration.pdb
 =======
-C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmDog.resources
+C:/Users/30004700/Source/Repos/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmDog.resources
 >>>>>>> cba7c32dd01f1985d3459624d1d1bb7ccd65d91e
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.AssemblyReference.cache
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmCustomer.resources
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.frmDog.resources
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.Properties.Resources.resources
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.GenerateResource.cache
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.csproj.CoreCompileInputs.cache
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.exe
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/obj/Debug/playerRegistration.pdb
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe.config
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.exe
+/Users/ryancampbell/Documents/GitHub/inTheDogHouse/playerRegistration/playerRegistration/bin/Debug/playerRegistration.pdb
