@@ -218,7 +218,53 @@ namespace playerRegistration
 
         void EditTabValidate(object sender, EventArgs e)
         {
+            if (dogSelected == false && dogNoSelected == 0)
+            {
+                dogSelected = false;
+                dogNoSelected = 0;
+                
+            }
+            else if(dgvDogs.SelectedRows.Count == 1)
+            {
+                dogSelected = true;
+                dogNoSelected = Convert.ToInt32(dgvDogs.SelectedRows[0].Cells[0].Value);
+            }
+        }
 
+        private void frmDog_Shown(object sender, EventArgs e)
+        {
+            tabDog.TabPages[0].CausesValidation = true;
+            tabDog.TabPages[0].Validating += new CancelEventHandler(AddTableValidate);
+
+            tabDog.TabPages[2].CausesValidation = true;
+            tabDog.TabPages[2].Validating += new CancelEventHandler(AddTableValidate);
+        }
+
+        private void btnAddAdd_Click(object sender, EventArgs e)
+        {
+            MyDog myDog = new MyDog();
+            bool ok = true;
+            errP.Clear();
+
+            try
+            {
+                myDog.DogNo = Convert.ToInt32(lblAddDogNumber.Text.Trim());
+            }
+            catch(MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(lblAddDogNumber, MyEx.toString());
+            }
+
+            try
+            {
+                myDog.name = txtAddName.Text.Trim();
+            }
+            catch(MyException myex)
+            {
+                ok = false;
+                errP.SetError(txtAddName, myex.toString());              
+            }
         }
 
 
