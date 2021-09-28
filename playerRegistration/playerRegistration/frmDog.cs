@@ -185,5 +185,42 @@ namespace playerRegistration
                 tabDog.SelectedIndex = 0;
         }
 
+        private void btnDisplayDelete_Click_1(object sender, EventArgs e)
+        {
+            //if(lstCustomers.selectedindices.Count == 0)
+            if(dgvDogs.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a Dog from the list", "Select Dog");
+                              
+            }
+            else
+            {
+                drDog = dsInTheDogHouse.Tables["Dog"].Rows.Find(dgvDogs.SelectedRows[0].Cells[0].Value);
+
+                string tempName = drDog["Name"].ToString() + "#'S";
+
+                if(MessageBox.Show("Are you sure you want to delete" + tempName + " details", "Add Dog", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    drDog.Delete();
+                    daDog.Update(dsInTheDogHouse, "Dog");
+                }
+            }
+        }
+
+        void AddTableValidate (object sender, EventArgs e)
+        {
+            if(dgvDogs.SelectedRows.Count == 0)
+            {
+                dogSelected = false;
+                dogNoSelected = Convert.ToInt32(dgvDogs.SelectedRows[0].Cells[0].Value);
+            }
+        }
+
+        void EditTabValidate(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
