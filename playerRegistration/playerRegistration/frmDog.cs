@@ -185,5 +185,88 @@ namespace playerRegistration
                 tabDog.SelectedIndex = 0;
         }
 
+        private void btnDisplayDelete_Click_1(object sender, EventArgs e)
+        {
+            //if(lstCustomers.selectedindices.Count == 0)
+            if(dgvDogs.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a Dog from the list", "Select Dog");
+                              
+            }
+            else
+            {
+                drDog = dsInTheDogHouse.Tables["Dog"].Rows.Find(dgvDogs.SelectedRows[0].Cells[0].Value);
+
+                string tempName = drDog["Name"].ToString() + "#'S";
+
+                if(MessageBox.Show("Are you sure you want to delete" + tempName + " details", "Add Dog", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    drDog.Delete();
+                    daDog.Update(dsInTheDogHouse, "Dog");
+                }
+            }
+        }
+
+        void AddTableValidate (object sender, EventArgs e)
+        {
+            if(dgvDogs.SelectedRows.Count == 0)
+            {
+                dogSelected = false;
+                dogNoSelected = Convert.ToInt32(dgvDogs.SelectedRows[0].Cells[0].Value);
+            }
+        }
+
+        void EditTabValidate(object sender, EventArgs e)
+        {
+            if (dogSelected == false && dogNoSelected == 0)
+            {
+                dogSelected = false;
+                dogNoSelected = 0;
+                
+            }
+            else if(dgvDogs.SelectedRows.Count == 1)
+            {
+                dogSelected = true;
+                dogNoSelected = Convert.ToInt32(dgvDogs.SelectedRows[0].Cells[0].Value);
+            }
+        }
+
+        private void frmDog_Shown(object sender, EventArgs e)
+        {
+            tabDog.TabPages[0].CausesValidation = true;
+            tabDog.TabPages[0].Validating += new CancelEventHandler(AddTableValidate);
+
+            tabDog.TabPages[2].CausesValidation = true;
+            tabDog.TabPages[2].Validating += new CancelEventHandler(AddTableValidate);
+        }
+
+        private void btnAddAdd_Click(object sender, EventArgs e)
+        {
+            MyDog myDog = new MyDog();
+            bool ok = true;
+            errP.Clear();
+
+            try
+            {
+                myDog.DogNo = Convert.ToInt32(lblAddDogNumber.Text.Trim());
+            }
+            catch(MyException MyEx)
+            {
+                ok = false;
+                errP.SetError(lblAddDogNumber, MyEx.toString());
+            }
+
+            try
+            {
+                myDog.Name = txtAddName.Text.Trim();
+            }
+            catch(MyException myex)
+            {
+                ok = false;
+                errP.SetError(txtAddName, myex.toString());              
+            }
+        }
+
+
     }
 }
