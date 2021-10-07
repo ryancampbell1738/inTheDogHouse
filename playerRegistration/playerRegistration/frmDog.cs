@@ -248,7 +248,7 @@ namespace playerRegistration
 
             try
             {
-                myDog.DogNo = Convert.ToInt32(lblAddDogNumber.Text.Trim());
+               myDog.DogNo = Convert.ToInt32(lblAddDogNumber.Text.Trim());
             }
             catch(MyException MyEx)
             {
@@ -258,7 +258,7 @@ namespace playerRegistration
 
             try
             {
-                myDog.name = txtAddName.Text.Trim();
+               // myDog.name = txtAddName.Text.Trim();
             }
             catch(MyException myex)
             {
