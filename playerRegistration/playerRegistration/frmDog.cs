@@ -258,7 +258,7 @@ namespace playerRegistration
 
             try
             {
-                myDog.Name = txtAddName.Text.Trim();
+                myDog.name = txtAddName.Text.Trim();
             }
             catch(MyException myex)
             {
