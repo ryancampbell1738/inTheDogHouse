@@ -40,3 +40,15 @@ D:\Stathub Repository\playerReg\playerRegistration\playerRegistration\obj\Debug\
 =======
 C:\Users\30004700\Source\Repos\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmDog.resources
 >>>>>>> cba7c32dd01f1985d3459624d1d1bb7ccd65d91e
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe.config
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.exe
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\bin\Debug\playerRegistration.pdb
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.AssemblyReference.cache
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmBooking.resources
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmCustomer.resources
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.frmDog.resources
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.Properties.Resources.resources
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.GenerateResource.cache
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.csproj.CoreCompileInputs.cache
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.exe
+C:\Users\30004700\Documents\GitHub\inTheDogHouse\playerRegistration\playerRegistration\obj\Debug\playerRegistration.pdb
