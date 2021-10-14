@@ -17,8 +17,9 @@ namespace playerRegistration
         DataSet dsInTheDogHouse = new DataSet();
         SqlConnection conn;
         SqlCommand cmdCustomerDetails, cmdDogDetails, cmdKennelDetails;
-
         SqlCommandBuilder cmdBCustomer, cmdBBooking, cmdBBookingDet, cmdBBookedKennels;
+
+
         DataRow drCustomer;
 
         String sqlNames, sqlCustomerDetails, sqlDogDetails, sqlKennelDetails, sqlBooking, sqlBookingDet, sqlBookedKennels;
@@ -68,15 +69,15 @@ namespace playerRegistration
 
             foreach (DataRow dr in dsInTheDogHouse.Tables["Customer"].Rows)
             {
-                cmbCustomerName.Items.Add(dr["Surname"].ToString() + ", " + dr["Forename"].ToString() + " (" + dr["CustomerNo"].ToString() + ") ");
+                cmbCustomerName.Items.Add(dr["Surname"].ToString() + ", " + dr["Forename"].ToString() + " (" + dr["CustomerNo"].ToString() + ")");
             }
         }
 
         private void cmbCustomerName_SelectedIndexChanged(object sender, EventArgs e)
         {
             int CustNo = int.Parse(cmbCustomerName.Text.Substring(cmbCustomerName.Text.Length - 6, 5));
-
             drCustomer = dsInTheDogHouse.Tables["Customer"].Rows.Find(CustNo);
+
             lblStreet.Text = drCustomer["Street"].ToString();
             lblTown.Text = drCustomer["Town"].ToString();
             lblPostcode.Text = drCustomer["Postcode"].ToString();
@@ -94,7 +95,7 @@ namespace playerRegistration
         {
             populateDogs();
         }
-        
+
         private void populateDogs()
         {
             bool ok;
@@ -106,6 +107,36 @@ namespace playerRegistration
 
             pnlDog.Enabled = true;
 
+            DateTime currEndDate = DateTime.Parse(dtpStartDate.Text.Trim());
+            currEndDate.AddDays(int.Parse(cmbNoDays.Text));
+            
+            foreach (DataRow drDog in dsInTheDogHouse.Tables["Dog"].Rows)
+            {
+                ok = true;
+
+                foreach(DataRow dr in dsInTheDogHouse.Tables["BookedKennels"].Rows)
+                {
+                    DateTime bookedDate = DateTime.Parse(dr["dateStart"].ToString());
+                    if(currEndDate>= bookedDate && currEndDate <= bookedDate.AddDays(int.Parse(dr["noDays"].ToString())))
+                    {
+                        {
+                            if((dr["dogNo"].ToString()==drDog["dogNo"].ToString()))
+                            {
+                                ok = false;
+                            }
+                        }
+                        if (!ok)
+                            break;
+                    }
+                    if (ok)
+                        cmbDogName.Items.Add(drDog["name"].ToString());
+                }
+            }         
+        }
+
+        private void cmbDog_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnlKennel.Enabled = true;
         }
     }
 }

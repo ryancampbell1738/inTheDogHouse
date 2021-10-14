@@ -52,7 +52,7 @@ namespace playerRegistration
             this.cmbDogName = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlKennel = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbKennelNo = new System.Windows.Forms.ComboBox();
             this.pnlDog = new System.Windows.Forms.Panel();
@@ -61,7 +61,7 @@ namespace playerRegistration
             ((System.ComponentModel.ISupportInitialize)(this.errP)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlKennel.SuspendLayout();
             this.pnlDog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKennel)).BeginInit();
             this.SuspendLayout();
@@ -109,6 +109,7 @@ namespace playerRegistration
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(136, 20);
             this.dtpStartDate.TabIndex = 3;
+            this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // label9
             // 
@@ -197,12 +198,22 @@ namespace playerRegistration
             // 
             // cmbNoDays
             // 
+            this.cmbNoDays.AllowDrop = true;
             this.cmbNoDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNoDays.FormattingEnabled = true;
+            this.cmbNoDays.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
             this.cmbNoDays.Location = new System.Drawing.Point(503, 85);
             this.cmbNoDays.Name = "cmbNoDays";
             this.cmbNoDays.Size = new System.Drawing.Size(136, 24);
             this.cmbNoDays.TabIndex = 1;
+            this.cmbNoDays.SelectedIndexChanged += new System.EventHandler(this.cmbNoOfDays_SelectedIndexChanged);
             // 
             // cmbCustomerName
             // 
@@ -212,6 +223,7 @@ namespace playerRegistration
             this.cmbCustomerName.Name = "cmbCustomerName";
             this.cmbCustomerName.Size = new System.Drawing.Size(169, 24);
             this.cmbCustomerName.TabIndex = 1;
+            this.cmbCustomerName.SelectedIndexChanged += new System.EventHandler(this.cmbCustomerName_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -261,6 +273,7 @@ namespace playerRegistration
             this.cmbDogName.Name = "cmbDogName";
             this.cmbDogName.Size = new System.Drawing.Size(280, 24);
             this.cmbDogName.TabIndex = 1;
+            this.cmbDogName.Click += new System.EventHandler(this.cmbDog_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -282,15 +295,15 @@ namespace playerRegistration
             this.panel2.Size = new System.Drawing.Size(668, 60);
             this.panel2.TabIndex = 11;
             // 
-            // panel3
+            // pnlKennel
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.cmbKennelNo);
-            this.panel3.Location = new System.Drawing.Point(12, 426);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(668, 56);
-            this.panel3.TabIndex = 12;
+            this.pnlKennel.BackColor = System.Drawing.Color.White;
+            this.pnlKennel.Controls.Add(this.label14);
+            this.pnlKennel.Controls.Add(this.cmbKennelNo);
+            this.pnlKennel.Location = new System.Drawing.Point(12, 426);
+            this.pnlKennel.Name = "pnlKennel";
+            this.pnlKennel.Size = new System.Drawing.Size(668, 56);
+            this.pnlKennel.TabIndex = 12;
             // 
             // label14
             // 
@@ -349,7 +362,7 @@ namespace playerRegistration
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(805, 693);
             this.Controls.Add(this.pnlDog);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnlKennel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtHeading);
@@ -362,8 +375,8 @@ namespace playerRegistration
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlKennel.ResumeLayout(false);
+            this.pnlKennel.PerformLayout();
             this.pnlDog.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKennel)).EndInit();
             this.ResumeLayout(false);
@@ -394,7 +407,7 @@ namespace playerRegistration
         private System.Windows.Forms.Panel pnlDog;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgvKennel;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlKennel;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbKennelNo;
         private System.Windows.Forms.Panel panel2;
